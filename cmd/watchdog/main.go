@@ -11,8 +11,6 @@ import (
 	"net"
 	"net/http"
 	"os"
-	"os/signal"
-	"syscall"
 	"time"
 
 	"github.com/alexflint/go-arg"
@@ -63,7 +61,6 @@ func main() {
 	route53Client := route53.NewFromConfig(awsCfg)
 	snsClient := sns.NewFromConfig(awsCfg)
 
-	setupTerminationHandler(ecsClient, snsClient, &cfg, logger)
 	taskID := fetchTaskID(logger)
 	publicIP := resolvePublicIP(ecsClient, ec2Client, &cfg, taskID, logger)
 	updateDNSRecord(route53Client, &cfg, publicIP, logger)
@@ -74,18 +71,10 @@ func main() {
 	if waitForInitialClientConnection(&cfg, edition, logger) {
 		monitorClientConnections(ecsClient, snsClient, &cfg, edition, logger)
 	} else {
-		exitWithError(fmt.Sprintf("%d minutes exceeded without a connection, terminating.", cfg.StartupMin), nil, logger)
+		logger.Info(fmt.Sprintf("%d minutes exceeded without a connection, initiating shutdown.", cfg.StartupMin))
+		shutdownService(ecsClient, snsClient, &cfg, logger)
+		exitWithError("No initial client connection established, service shut down.", nil, logger)
 	}
-}
-
-func setupTerminationHandler(ecsClient *ecs.Client, snsClient *sns.Client, cfg *Config, logger *slog.Logger) {
-	sigChan := make(chan os.Signal, 1)
-	signal.Notify(sigChan, syscall.SIGTERM)
-	go func() {
-		<-sigChan
-		logger.Info("Received SIGTERM, initiating shutdown.")
-		shutdownService(ecsClient, snsClient, cfg, logger)
-	}()
 }
 
 func fetchTaskID(logger *slog.Logger) string {
@@ -203,16 +192,24 @@ func waitForRCON(logger *slog.Logger) {
 	}
 }
 
-func buildBedrockPing() []byte {
-	ping := append([]byte{0x01}, []byte{0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x4e, 0x20}...)
-	ping = append(ping, []byte{0x00, 0xff, 0xff, 0x00, 0xfe, 0xfe, 0xfe, 0xfe, 0xfd, 0xfd, 0xfd, 0xfd, 0x12, 0x34, 0x56, 0x78}...)
-	guid := make([]byte, 8)
-	if _, err := rand.Read(guid); err == nil {
-		randomHex := make([]byte, hex.EncodedLen(len(guid)))
-		hex.Encode(randomHex, guid)
-		ping = append(ping, randomHex...)
+func waitForInitialClientConnection(cfg *Config, edition string, logger *slog.Logger) bool {
+	logger.Info("Checking every 1 minute for active connections to Minecraft...", slog.Int("minutes", cfg.StartupMin))
+	for counter := 0; counter < cfg.StartupMin; counter++ {
+		if isConnected(edition, logger) {
+			logger.Info("Initial connection established, proceeding to shutdown monitoring.")
+			return true
+		}
+		logger.Info(fmt.Sprintf("Waiting for connection, minute %d out of %d...", counter, cfg.StartupMin))
+		time.Sleep(checkInterval)
 	}
-	return ping
+	return false
+}
+
+func isConnected(edition string, logger *slog.Logger) bool {
+	if edition == "java" {
+		return checkConnections(javaPort) > 0
+	}
+	return sendBedrockPing(logger) > 0
 }
 
 func sendBedrockPing(logger *slog.Logger) int {
@@ -243,24 +240,16 @@ func sendBedrockPing(logger *slog.Logger) int {
 	return 0
 }
 
-func waitForInitialClientConnection(cfg *Config, edition string, logger *slog.Logger) bool {
-	logger.Info("Checking every 1 minute for active connections to Minecraft...", slog.Int("minutes", cfg.StartupMin))
-	for counter := 0; counter < cfg.StartupMin; counter++ {
-		if isConnected(edition, logger) {
-			logger.Info("Initial connection established, proceeding to shutdown monitoring.")
-			return true
-		}
-		logger.Info(fmt.Sprintf("Waiting for connection, minute %d out of %d...", counter, cfg.StartupMin))
-		time.Sleep(checkInterval)
+func buildBedrockPing() []byte {
+	ping := append([]byte{0x01}, []byte{0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x4e, 0x20}...)
+	ping = append(ping, []byte{0x00, 0xff, 0xff, 0x00, 0xfe, 0xfe, 0xfe, 0xfe, 0xfd, 0xfd, 0xfd, 0xfd, 0x12, 0x34, 0x56, 0x78}...)
+	guid := make([]byte, 8)
+	if _, err := rand.Read(guid); err == nil {
+		randomHex := make([]byte, hex.EncodedLen(len(guid)))
+		hex.Encode(randomHex, guid)
+		ping = append(ping, randomHex...)
 	}
-	return false
-}
-
-func isConnected(edition string, logger *slog.Logger) bool {
-	if edition == "java" {
-		return checkConnections(javaPort) > 0
-	}
-	return sendBedrockPing(logger) > 0
+	return ping
 }
 
 func checkConnections(port int) int {
@@ -340,3 +329,4 @@ func exitWithError(msg string, err error, logger *slog.Logger) {
 	}
 	os.Exit(1)
 }
+

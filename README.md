@@ -164,12 +164,11 @@ My development time invested in this project comes for free 😊
 ## FAQ / Learnings
 
 ### DNS query logging only works in `us-east-1`?
-- Yes, for Route 53 DNS query logging, the CloudWatch log group must be in `us-east-1`.
-- To set it up, choose or create a log group in the Route 53 console. [More info](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/query-logs.html).
+- Yes, for Route 53 DNS query logging, the CloudWatch log group must be in `us-east-1`. Whoever decided that...
 
 ### Vendor logs can’t be forwarded across regions?
 - Correct. Route 53 and similar logs can't be forwarded directly to log groups in other regions.
-- Use a Firehose stream or Lambda to move logs between regions.
+- Use a Firehose stream or Lambda to move logs between regions. I'm using a lambda function here.
 
 ### CDK stacks can’t deploy to multiple regions?
 - No. Deploying resources to different regions requires splitting into separate stacks.
@@ -177,6 +176,12 @@ My development time invested in this project comes for free 😊
 ### CloudWatch logs are gzipped?
 - Yes, they are. You can't just forward events directly; you need to handle decompression first.
 
+## Acknowledgements
+
+Special Thanks to the following projects:
+
+* [VeriorPies/MineCloud](https://github.com/VeriorPies/MineCloud)
+* [itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server)
 
 ## Contributing & License
 

@@ -78,7 +78,7 @@ Requires `Go` (1.23+) + `cdk` (2.16+). You'll also need an AWS Account. Furtherm
    make cdk-deploy
    ```
 
-## How It Works (Updated)
+## How It Works
 
 ```mermaid
 flowchart TD

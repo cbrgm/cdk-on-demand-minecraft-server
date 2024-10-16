@@ -1,6 +1,6 @@
 # cdk-on-demand-minecraft-server
 
-`cdk-on-demand-minecraft-server` is an AWS CDK application that sets up an on-demand Minecraft server using AWS infrastructure. The server automatically starts when players connect and stops when idle, helping reduce costs by running only when needed.
+`cdk-on-demand-minecraft-server` is an AWS CDK App that sets up an on-demand Minecraft server using AWS. The server automatically starts when players connect and stops when idle, helping reduce costs by running only when needed.
 
 ## Motivation
 

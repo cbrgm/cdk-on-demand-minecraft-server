@@ -329,4 +329,3 @@ func exitWithError(msg string, err error, logger *slog.Logger) {
 	}
 	os.Exit(1)
 }
-

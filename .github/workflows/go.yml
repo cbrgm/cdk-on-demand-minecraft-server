@@ -1,0 +1,40 @@
+---
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+name: test-and-build
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: install Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ^1.23
+
+      - name: get modules
+        run: go mod vendor
+
+      - name: run format
+        run: make fmt && git diff --exit-code
+
+      - name: run vet
+        run: make vet
+
+      - name: run lint
+        uses: golangci/golangci-lint-action@v6.1.1
+        with:
+          version: latest
+          args: --timeout=10m
+
+      - name: run build
+        run: make build
+
+      - name: run tests
+        run: make test
+...

@@ -1,10 +1,10 @@
 # cdk-on-demand-minecraft-server
 
-`cdk-on-demand-minecraft-server` is an AWS CDK App that sets up an on-demand Minecraft server using AWS. The server automatically starts when players connect and stops when idle, helping reduce costs by running only when needed.
+This CDK app sets up a quick, low-cost way to play Minecraft with friends without needing a 24/7 server The server automatically starts when players connect and stops when idle, helping reduce costs by running only when needed.
 
 ## Motivation
 
-This project set up a quick, low-cost way to play Minecraft with friends without needing a 24/7 server. The idea was to spin up the server only when needed and save on costs by shutting it down when idle. Along the way, it was a chance to learn about using ECS for container management and EFS for persistent storage. 😊
+The idea was to spin up the server only when needed and save on costs by shutting it down when idle. Along the way, it was a chance to learn about using ECS for container management and EFS for persistent storage. 😊
 
 ## Environment Variables
 
@@ -47,6 +47,12 @@ This project set up a quick, low-cost way to play Minecraft with friends without
 - **MINECRAFT_ENABLE_WHITELIST**: Enable whitelist (`false`)
 - **MINECRAFT_WHITELIST**: Comma-separated usernames/UUIDs for whitelist (default: empty)
 - **MINECRAFT_OP_PERMISSION_LEVEL**: OP level (`1`)
+- **MINECRAFT_LEVEL_TYPE**: Type of world to generate (`minecraft:default`)
+- **MINECRAFT_SPAWN_PROTECTION**: Non-op build protection radius (`0` to disable)
+- **MINECRAFT_VIEW_DISTANCE**: Viewing distance in chunks (`10`)
+- **MINECRAFT_ICON**: URL or file path for the server icon (default: empty)
+- **MINECRAFT_OVERRIDE_ICON**: Override existing server icon (`false`)
+- **MINECRAFT_OVERRIDE_WHITELIST**: Override whitelist on startup (`false`)
 
 ### AWS Configuration:
 - **AWS_STACK_NAME**: Name of the CDK stack (`MinecraftServerStack`)

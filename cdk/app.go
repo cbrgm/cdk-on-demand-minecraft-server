@@ -58,6 +58,12 @@ type ServerConfig struct {
 	EnableWhitelist            string
 	Whitelist                  string
 	OpPermissionLevel          string
+	LevelType                  string
+	SpawnProtection            string
+	ViewDistance               string
+	Icon                       string
+	OverrideIcon               string
+	OverrideWhitelist          string
 }
 
 // NewMinecraftServerStack creates the stack.
@@ -160,6 +166,12 @@ func ConfigureServer(edition, debug string) ServerConfig {
 		EnableWhitelist:            getEnvOrDefault("MINECRAFT_ENABLE_WHITELIST", "false"),
 		Whitelist:                  getEnvOrDefault("MINECRAFT_WHITELIST", ""),
 		OpPermissionLevel:          getEnvOrDefault("MINECRAFT_OP_PERMISSION_LEVEL", "1"),
+		LevelType:                  getEnvOrDefault("MINECRAFT_LEVEL_TYPE", "minecraft:default"),
+		SpawnProtection:            getEnvOrDefault("MINECRAFT_SPAWN_PROTECTION", "0"),
+		ViewDistance:               getEnvOrDefault("MINECRAFT_VIEW_DISTANCE", "10"),
+		Icon:                       getEnvOrDefault("MINECRAFT_ICON", ""),
+		OverrideIcon:               getEnvOrDefault("MINECRAFT_OVERRIDE_ICON", "false"),
+		OverrideWhitelist:          getEnvOrDefault("MINECRAFT_OVERRIDE_WHITELIST", "false"),
 	}
 }
 

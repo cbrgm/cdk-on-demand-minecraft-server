@@ -176,6 +176,12 @@ func NewECSResources(scope constructs.Construct, id string, props *ECSResourcesP
 			"ENABLE_WHITELIST":             jsii.String(props.MinecraftServerConfig.EnableWhitelist),
 			"WHITELIST":                    jsii.String(props.MinecraftServerConfig.Whitelist),
 			"OP_PERMISSION_LEVEL":          jsii.String(props.MinecraftServerConfig.OpPermissionLevel),
+			"LEVEL_TYPE":                   jsii.String(props.MinecraftServerConfig.LevelType),
+			"SPAWN_PROTECTION":             jsii.String(props.MinecraftServerConfig.SpawnProtection),
+			"VIEW_DISTANCE":                jsii.String(props.MinecraftServerConfig.ViewDistance),
+			"ICON":                         jsii.String(props.MinecraftServerConfig.Icon),
+			"OVERRIDE_ICON":                jsii.String(props.MinecraftServerConfig.OverrideIcon),
+			"OVERRIDE_WHITELIST":           jsii.String(props.MinecraftServerConfig.OverrideWhitelist),
 		},
 		PortMappings: &[]*awsecs.PortMapping{
 			{

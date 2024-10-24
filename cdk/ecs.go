@@ -181,7 +181,8 @@ func NewECSResources(scope constructs.Construct, id string, props *ECSResourcesP
 			"VIEW_DISTANCE":                jsii.String(props.MinecraftServerConfig.ViewDistance),
 			"ICON":                         jsii.String(props.MinecraftServerConfig.Icon),
 			"OVERRIDE_ICON":                jsii.String(props.MinecraftServerConfig.OverrideIcon),
-			"OVERRIDE_WHITELIST":           jsii.String(props.MinecraftServerConfig.OverrideWhitelist),
+			// todo(cbrgm): this option is disabled until the flag issue is handled in itzg/minecraft-server-docker
+			// "OVERRIDE_WHITELIST":           jsii.String(props.MinecraftServerConfig.OverrideWhitelist),
 		},
 		PortMappings: &[]*awsecs.PortMapping{
 			{

@@ -4,13 +4,13 @@ go 1.23
 
 require (
 	github.com/alexflint/go-arg v1.5.1
-	github.com/aws/aws-cdk-go/awscdk/v2 v2.163.1
+	github.com/aws/aws-cdk-go/awscdk/v2 v2.164.0
 	github.com/aws/aws-lambda-go v1.47.0
 	github.com/aws/aws-sdk-go-v2 v1.32.2
 	github.com/aws/aws-sdk-go-v2/config v1.28.0
 	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.41.2
-	github.com/aws/aws-sdk-go-v2/service/ec2 v1.185.0
-	github.com/aws/aws-sdk-go-v2/service/ecs v1.47.4
+	github.com/aws/aws-sdk-go-v2/service/ec2 v1.186.0
+	github.com/aws/aws-sdk-go-v2/service/ecs v1.48.0
 	github.com/aws/aws-sdk-go-v2/service/route53 v1.45.2
 	github.com/aws/aws-sdk-go-v2/service/sns v1.33.2
 	github.com/aws/constructs-go/constructs/v10 v10.4.2

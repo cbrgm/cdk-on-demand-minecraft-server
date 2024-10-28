@@ -6,13 +6,13 @@ require (
 	github.com/alexflint/go-arg v1.5.1
 	github.com/aws/aws-cdk-go/awscdk/v2 v2.164.1
 	github.com/aws/aws-lambda-go v1.47.0
-	github.com/aws/aws-sdk-go-v2 v1.32.2
+	github.com/aws/aws-sdk-go-v2 v1.32.3
 	github.com/aws/aws-sdk-go-v2/config v1.28.0
-	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.42.0
-	github.com/aws/aws-sdk-go-v2/service/ec2 v1.186.0
-	github.com/aws/aws-sdk-go-v2/service/ecs v1.48.0
-	github.com/aws/aws-sdk-go-v2/service/route53 v1.45.2
-	github.com/aws/aws-sdk-go-v2/service/sns v1.33.2
+	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.42.1
+	github.com/aws/aws-sdk-go-v2/service/ec2 v1.186.1
+	github.com/aws/aws-sdk-go-v2/service/ecs v1.48.1
+	github.com/aws/aws-sdk-go-v2/service/route53 v1.45.3
+	github.com/aws/aws-sdk-go-v2/service/sns v1.33.3
 	github.com/aws/constructs-go/constructs/v10 v10.4.2
 	github.com/aws/jsii-runtime-go v1.104.0
 	github.com/shirou/gopsutil v3.21.11+incompatible
@@ -24,11 +24,11 @@ require (
 	github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.6.6 // indirect
 	github.com/aws/aws-sdk-go-v2/credentials v1.17.41 // indirect
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.16.17 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/configsources v1.3.21 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.6.21 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.3.22 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.6.22 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/ini v1.8.1 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.12.0 // indirect
-	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.12.2 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.12.3 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sso v1.24.2 // indirect
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.28.2 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.32.2 // indirect

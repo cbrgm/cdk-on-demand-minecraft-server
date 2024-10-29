@@ -154,17 +154,28 @@ func determineEdition(cfg *Config, logger *slog.Logger) string {
 	logger.Info("Determining Minecraft edition based on listening port...")
 	counter := 0
 	for {
-		if isPortOpen(javaPort) {
-			logger.Info("Detected Java Edition")
+		logger.Info("Checking ports for Minecraft server availability...",
+			"attempt", counter+1,
+			"javaPort", javaPort,
+			"bedrockPort", bedrockPort,
+		)
+
+		if isPortOpenAndListening(javaPort) { // Check Java port with LISTEN status
+			logger.Info("Detected Java Edition on port", "port", javaPort)
 			waitForRCON(logger)
 			return "java"
 		}
-		if isPortOpen(bedrockPort) {
-			logger.Info("Detected Bedrock Edition")
+
+		if isPortOpen(bedrockPort) { // Check Bedrock port without requiring LISTEN status
+			logger.Info("Detected Bedrock Edition on port", "port", bedrockPort)
 			return "bedrock"
 		}
+
+		logger.Info("Neither Java nor Bedrock ports are open; retrying in 1 second...", "counter", counter)
+
 		time.Sleep(time.Second)
 		counter++
+
 		if counter > int(maxStartupWait.Seconds()) {
 			exitWithError("10 minutes elapsed without Minecraft server starting. Terminating.", nil, logger)
 		}
@@ -172,6 +183,16 @@ func determineEdition(cfg *Config, logger *slog.Logger) string {
 }
 
 func isPortOpen(port int) bool {
+	conns, _ := psnet.Connections("all")
+	for _, conn := range conns {
+		if int(conn.Laddr.Port) == port {
+			return true
+		}
+	}
+	return false
+}
+
+func isPortOpenAndListening(port int) bool {
 	conns, _ := psnet.Connections("all")
 	for _, conn := range conns {
 		if int(conn.Laddr.Port) == port && conn.Status == "LISTEN" {
@@ -184,7 +205,7 @@ func isPortOpen(port int) bool {
 func waitForRCON(logger *slog.Logger) {
 	logger.Info("Waiting for Minecraft RCON to begin listening...")
 	for {
-		if isPortOpen(rconPort) {
+		if isPortOpenAndListening(rconPort) {
 			logger.Info("RCON is listening, ready for clients.")
 			break
 		}

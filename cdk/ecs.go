@@ -191,7 +191,8 @@ func NewECSResources(scope constructs.Construct, id string, props *ECSResourcesP
 				Protocol:      props.ServerProtocol,
 			},
 		},
-		Logging: loggingDriver,
+		MemoryReservationMiB: jsii.Number(6144),
+		Logging:              loggingDriver,
 	})
 
 	if props.EnablePersistence {
@@ -234,7 +235,8 @@ func NewECSResources(scope constructs.Construct, id string, props *ECSResourcesP
 			"STARTUPMIN":  jsii.String(props.StartupMin),
 			"SHUTDOWNMIN": jsii.String(props.ShutdownMin),
 		},
-		Logging: loggingDriver,
+		MemoryReservationMiB: jsii.Number(64),
+		Logging:              loggingDriver,
 	})
 
 	// IAM Policies for Watchdog

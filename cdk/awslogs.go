@@ -104,8 +104,8 @@ func NewQueryLogStack(scope constructs.Construct, id string, props *QueryLogStac
 	queryLogGroup.AddSubscriptionFilter(jsii.String(subscriptionFilterID), &awslogs.SubscriptionFilterOptions{
 		Destination: awslogsdestinations.NewLambdaDestination(logForwarderLambda, &awslogsdestinations.LambdaDestinationOptions{}),
 		FilterPattern: awslogs.FilterPattern_AllTerms(
-			jsii.String("_minecraft._tcp"),
-			jsii.String("SRV"),
+			// jsii.String("_minecraft._tcp"),
+			// jsii.String("SRV"),
 			jsii.String(fmt.Sprintf("%s.%s", props.ServerSubDomain, props.Domain)),
 		),
 	})

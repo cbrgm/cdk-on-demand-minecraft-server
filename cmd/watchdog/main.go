@@ -11,6 +11,7 @@ import (
 	"net"
 	"net/http"
 	"os"
+	"strconv"
 	"time"
 
 	"github.com/alexflint/go-arg"
@@ -154,17 +155,26 @@ func determineEdition(cfg *Config, logger *slog.Logger) string {
 	logger.Info("Determining Minecraft edition based on listening port...")
 	counter := 0
 	for {
-		if isPortOpen(javaPort) {
-			logger.Info("Detected Java Edition")
+		logger.Info("Checking ports for Minecraft server availability...",
+			"attempt", counter+1,
+			"javaPort", javaPort,
+			"bedrockPort", bedrockPort,
+		)
+
+		if isPortOpenAndListening(javaPort) { // Check Java port with LISTEN status
+			logger.Info("Detected Java Edition on port", "port", javaPort)
 			waitForRCON(logger)
 			return "java"
 		}
-		if isPortOpen(bedrockPort) {
-			logger.Info("Detected Bedrock Edition")
+
+		if isPortOpen(bedrockPort) { // Check Bedrock port without requiring LISTEN status
+			logger.Info("Detected Bedrock Edition on port", "port", bedrockPort)
 			return "bedrock"
 		}
+
 		time.Sleep(time.Second)
 		counter++
+
 		if counter > int(maxStartupWait.Seconds()) {
 			exitWithError("10 minutes elapsed without Minecraft server starting. Terminating.", nil, logger)
 		}
@@ -172,6 +182,16 @@ func determineEdition(cfg *Config, logger *slog.Logger) string {
 }
 
 func isPortOpen(port int) bool {
+	conns, _ := psnet.Connections("all")
+	for _, conn := range conns {
+		if int(conn.Laddr.Port) == port {
+			return true
+		}
+	}
+	return false
+}
+
+func isPortOpenAndListening(port int) bool {
 	conns, _ := psnet.Connections("all")
 	for _, conn := range conns {
 		if int(conn.Laddr.Port) == port && conn.Status == "LISTEN" {
@@ -184,7 +204,7 @@ func isPortOpen(port int) bool {
 func waitForRCON(logger *slog.Logger) {
 	logger.Info("Waiting for Minecraft RCON to begin listening...")
 	for {
-		if isPortOpen(rconPort) {
+		if isPortOpenAndListening(rconPort) {
 			logger.Info("RCON is listening, ready for clients.")
 			break
 		}
@@ -219,25 +239,34 @@ func sendBedrockPing(logger *slog.Logger) int {
 		return 0
 	}
 
-	// nolint: errcheck
+	// nolint:errcheck
 	defer conn.Close()
 
-	if _, err := conn.Write(buildBedrockPing()); err != nil {
+	if _, err = conn.Write(buildBedrockPing()); err != nil {
 		logger.Error("Failed to send Bedrock ping packet", slog.String("error", err.Error()))
 		return 0
 	}
 
 	_ = conn.SetReadDeadline(time.Now().Add(bedrockPingWait))
 	buffer := make([]byte, 1024)
-	n, _ := conn.Read(buffer)
+	n, err := conn.Read(buffer)
+	if err != nil {
+		logger.Error("No response from server", slog.String("error", err.Error()))
+		return 0
+	}
 
+	// Parse response
 	if len(buffer[:n]) >= 34 {
 		parsedResponse := bytes.Split(buffer[34:n], []byte(";"))
 		if len(parsedResponse) > 4 {
-			return 1
+			playerCountStr := string(parsedResponse[4])
+			playerCount, err := strconv.Atoi(playerCountStr)
+			if err == nil && playerCount > 0 {
+				return playerCount // Players detected
+			}
 		}
 	}
-	return 0
+	return 0 // No players detected
 }
 
 func buildBedrockPing() []byte {

@@ -132,11 +132,13 @@ func ConfigureServer(edition, debug string) ServerConfig {
 	port := 25565
 	protocol := awsecs.Protocol_TCP
 	image := "itzg/minecraft-server"
+	ingressPort := awsec2.Port_Tcp(jsii.Number(float64(port)))
 
 	if edition != "java" {
 		port = 19132
 		protocol = awsecs.Protocol_UDP
 		image = "itzg/minecraft-bedrock-server"
+		ingressPort = awsec2.Port_Udp(jsii.Number(float64(port)))
 	}
 
 	return ServerConfig{
@@ -144,7 +146,7 @@ func ConfigureServer(edition, debug string) ServerConfig {
 		Protocol:                   protocol,
 		Image:                      image,
 		Debug:                      debug == "true",
-		IngressPort:                awsec2.Port_Tcp(jsii.Number(float64(port))),
+		IngressPort:                ingressPort,
 		Version:                    getEnvOrDefault("MINECRAFT_VERSION", "LATEST"),
 		Motd:                       getEnvOrDefault("MINECRAFT_MOTD", "Welcome to the on-demand minecraft server!"),
 		Difficulty:                 getEnvOrDefault("MINECRAFT_DIFFICULTY", "easy"),

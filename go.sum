@@ -4,8 +4,8 @@ github.com/alexflint/go-arg v1.5.1 h1:nBuWUCpuRy0snAG+uIJ6N0UvYxpxA0/ghA/AaHxlT8
 github.com/alexflint/go-arg v1.5.1/go.mod h1:A7vTJzvjoaSTypg4biM5uYNTkJ27SkNTArtYXnlqVO8=
 github.com/alexflint/go-scalar v1.2.0 h1:WR7JPKkeNpnYIOfHRa7ivM21aWAdHD0gEWHCx+WQBRw=
 github.com/alexflint/go-scalar v1.2.0/go.mod h1:LoFvNMqS1CPrMVltza4LvnGKhaSpc3oyLEBUZVhhS2o=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.173.4 h1:xcYFD7c6UIZ+cMwCNYIG6YZK39c5tnm6LeJn2DXBksI=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.173.4/go.mod h1:rBXrKmhrluYikJ2BNzOc9Ngs2F3W5gZYiiVsKiIoBZk=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.174.1 h1:493QFcgc8EHzKk3ry/OcyXcPO4IIB2G1N56eelr7LHU=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.174.1/go.mod h1:XmbvfJtG3yL0j7qyO/5VmkzR6aVcnMM2esXp0VxKuqY=
 github.com/aws/aws-lambda-go v1.47.0 h1:0H8s0vumYx/YKs4sE7YM0ktwL2eWse+kfopsRI1sXVI=
 github.com/aws/aws-lambda-go v1.47.0/go.mod h1:dpMpZgvWx5vuQJfBt0zqBha60q7Dd7RfgJv23DymV8A=
 github.com/aws/aws-sdk-go-v2 v1.32.7 h1:ky5o35oENWi0JYWUZkB7WYvVPP+bcRF5/Iq7JWSb5Rw=
@@ -56,8 +56,8 @@ github.com/cdklabs/awscdk-asset-kubectl-go/kubectlv20/v2 v2.1.3 h1:u63i5K09xASBN
 github.com/cdklabs/awscdk-asset-kubectl-go/kubectlv20/v2 v2.1.3/go.mod h1:0xP6iiSIKPKsShb6T2kadnTq61wL+kwmHTHnEjkFZFI=
 github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.0 h1:kElXjprC8wkpJu58vp+WFH6z0AJw4zitg5iSKJPKe3c=
 github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.0/go.mod h1:JY4UnvNa1YDGQ4H5wohXTHl6YVY3uCDUWl4JYUrQfb8=
-github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v38 v38.0.1 h1:EJ0N5jiEm1bet7Mu8IU5ccERvOpki10wI0zOhIQCO1U=
-github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v38 v38.0.1/go.mod h1:WMWAzkRBUPWJ5Ord1ZL2KOTdqByf01PoL5EV9K9PYKQ=
+github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v39 v39.1.34 h1:ObFlfGCEAIUWHZnExynucV/1pegE1mTolBpd3J9kgIk=
+github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v39 v39.1.34/go.mod h1:9QiFxM66GW99YsAIO06RSB2xge7wUs97jNzMOevksc0=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

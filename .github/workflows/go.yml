@@ -27,7 +27,7 @@ jobs:
         run: make vet
 
       - name: run lint
-        uses: golangci/golangci-lint-action@v6.3.2
+        uses: golangci/golangci-lint-action@v6.3.3
         with:
           version: latest
           args: --timeout=10m

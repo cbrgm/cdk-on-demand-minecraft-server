@@ -5,8 +5,6 @@ service:
   golangci-lint-version: 1.64.5
 
 run:
-  # golang-ci lint runtime timeout
-  deadline: 5m
   # latest supported Go version
   go: '1.24'
   # see: https://golangci-lint.run/usage/configuration/
@@ -36,6 +34,9 @@ linters:
     - misspell
 
 issues:
+  exclude-dirs:
+  - cdk.out
+  - vendor
   # independently of option `exclude` we use default exclude patterns
   exclude-use-default: false
   # excluding configuration per-path, per-linter, per-text and per-source

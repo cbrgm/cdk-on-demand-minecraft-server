@@ -63,7 +63,7 @@ The idea was to spin up the server only when needed and save on costs by shuttin
 
 ## Deployment
 
-Requires `Go` (1.23+) + `cdk` (2.16+). You'll also need an AWS Account. Furthermore a Route 53 domain and a  Hosted Zone ID is required for this deployment to work.
+Requires `Go` (1.24+) + `cdk` (2.16+). You'll also need an AWS Account. Furthermore a Route 53 domain and a  Hosted Zone ID is required for this deployment to work.
 
 1. **Clone the Repository**
    ```

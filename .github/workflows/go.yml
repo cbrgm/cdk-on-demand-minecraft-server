@@ -15,7 +15,7 @@ jobs:
       - name: install Go
         uses: actions/setup-go@v5
         with:
-          go-version: ^1.23
+          go-version: ^1.24
 
       - name: get modules
         run: go mod vendor
@@ -27,7 +27,7 @@ jobs:
         run: make vet
 
       - name: run lint
-        uses: golangci/golangci-lint-action@v6.4.1
+        uses: golangci/golangci-lint-action@v6.5.0
         with:
           version: latest
           args: --timeout=10m

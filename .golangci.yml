@@ -1,59 +1,53 @@
-# golangci.com configuration
-# https://github.com/golangci/golangci/wiki/Configuration
-
+version: "2"
 run:
-  # latest supported Go version
-  go: '1.24'
-  # see: https://golangci-lint.run/usage/configuration/
+  go: "1.24"
   modules-download-mode: readonly
-  # include test files or not.
   tests: false
-
 linters:
-  # Enable specific linter (not part of default linters)
-  # https://golangci-lint.run/usage/linters/#enabled-by-default-linters
   enable:
-    - gofumpt  # gofumpt as replacement for gofmt
-    - revive    # revive as replacement for golint
-    - whitespace
-    - godot
     - gocyclo
+    - godot
     - misspell
-    # - gosec
-    # - wrapcheck
-
-issues:
-  exclude-dirs:
-    - cdk.out
-    - vendor
-  # independently of option `exclude`, use default exclude patterns
-  exclude-use-default: false
-  # excluding configuration per-path, per-linter, per-text, and per-source
-  exclude-rules:
-    - path: _test.go
-      linters:
-        - errcheck
-
-linters-settings:
-  # gofumpt settings
-  gofumpt:
-    extra-rules: true
-  # misspell settings
-  misspell:
-    locale: US
-  # revive settings
-  revive:
-    ignore-generated-header: true
-    severity: warning
+    - revive
+    - whitespace
+  settings:
+    gocyclo:
+      min-complexity: 20
+    gosec:
+      excludes:
+        - G404
+        - G114
+    misspell:
+      locale: US
+    revive:
+      severity: warning
+      rules:
+        - name: unexported-return
+          severity: warning
+          disabled: true
+  exclusions:
+    generated: lax
     rules:
-      - name: unexported-return
-        severity: warning
-        disabled: true
-  # gosec settings
-  gosec:
-    excludes:
-      - G404  # exclude random number check
-      - G114  # allowance of net/http serve function with no timeout
-  gocyclo:
-    min-complexity: 20
-
+      - linters:
+          - errcheck
+        path: _test.go
+    paths:
+      - cdk.out
+      - vendor
+      - third_party$
+      - builtin$
+      - examples$
+formatters:
+  enable:
+    - gofumpt
+  settings:
+    gofumpt:
+      extra-rules: true
+  exclusions:
+    generated: lax
+    paths:
+      - cdk.out
+      - vendor
+      - third_party$
+      - builtin$
+      - examples$

@@ -86,8 +86,8 @@ github.com/ashanbrown/forbidigo v1.6.0 h1:D3aewfM37Yb3pxHujIPSpTf6oQk9sc9WZi8ger
 github.com/ashanbrown/forbidigo v1.6.0/go.mod h1:Y8j9jy9ZYAEHXdu723cUlraTqbzjKF1MUyfOKL+AjcU=
 github.com/ashanbrown/makezero v1.2.0 h1:/2Lp1bypdmK9wDIq7uWBlDF1iMUpIIS4A+pF6C9IEUU=
 github.com/ashanbrown/makezero v1.2.0/go.mod h1:dxlPhHbDMC6N6xICzFBSK+4njQDdK8euNO0qjQMtGY4=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.186.0 h1:i10MWpK0tiwNXs5j3HRv+NGsvZsYD2QwDjVGhoSA6rY=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.186.0/go.mod h1:DPhzICINlx7zXMrKjRGuta/bAAAaeBQbeStBzf8JHVI=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.187.0 h1:SLeWauf+AgEC0dCZM79pNKnI+FqMtqlKgkJjnzc4hUk=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.187.0/go.mod h1:9ENCp/SkuTkIrAxG0cEdAD1QCC+QfpN82ukwrbwzwGE=
 github.com/aws/aws-lambda-go v1.47.0 h1:0H8s0vumYx/YKs4sE7YM0ktwL2eWse+kfopsRI1sXVI=
 github.com/aws/aws-lambda-go v1.47.0/go.mod h1:dpMpZgvWx5vuQJfBt0zqBha60q7Dd7RfgJv23DymV8A=
 github.com/aws/aws-sdk-go-v2 v1.36.3 h1:mJoei2CxPutQVxaATCzDUjcZEjVRdpsiiXi2o38yqWM=
@@ -156,12 +156,12 @@ github.com/catenacyber/perfsprint v0.8.2 h1:+o9zVmCSVa7M4MvabsWvESEhpsMkhfE7k0sH
 github.com/catenacyber/perfsprint v0.8.2/go.mod h1:q//VWC2fWbcdSLEY1R3l8n0zQCDPdE4IjZwyY1HMunM=
 github.com/ccojocar/zxcvbn-go v1.0.2 h1:na/czXU8RrhXO4EZme6eQJLR4PzcGsahsBOAwU6I3Vg=
 github.com/ccojocar/zxcvbn-go v1.0.2/go.mod h1:g1qkXtUSvHP8lhHp5GrSmTz6uWALGRMQdw6Qnz/hi60=
-github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.227 h1:8ghiL3sdoTn8EGSWyyAmt7dO/h30+fgJK4nEA32jMPE=
-github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.227/go.mod h1:DdG63+hiLpqqBWufXgZDgXuZm31yQdTd96M2HyqQllQ=
+github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.229 h1:pwQ0ejIdyj0HHdUomZzEGpzi8zTE8NMr55gwBGom8Y4=
+github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.229/go.mod h1:oquOkMHjv3uVsjt8ToBdJ3/i0HLD3RPEzuQlTzaieek=
 github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.0 h1:kElXjprC8wkpJu58vp+WFH6z0AJw4zitg5iSKJPKe3c=
 github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.0/go.mod h1:JY4UnvNa1YDGQ4H5wohXTHl6YVY3uCDUWl4JYUrQfb8=
-github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v40 v40.7.0 h1:ult7nwu68LJQwC9rLKrwQgFzH7CHT1IQVqtTFCgTiEE=
-github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v40 v40.7.0/go.mod h1:ce9S9a2dfGJqzzXHKgHiHCybH63d5MDkC18Ym0sHeHg=
+github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v41 v41.0.0 h1:vUMERjQ8BFG4wW6DNW+sxF5fDCnAYOukvZEiRX4kRkw=
+github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v41 v41.0.0/go.mod h1:JNDQuA9sW21qkalkNLfhtii9NztdzL/lscAjDIKhbV0=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/cespare/xxhash/v2 v2.1.1/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XLFGgcrjCOs=
 github.com/cespare/xxhash/v2 v2.1.2/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XLFGgcrjCOs=

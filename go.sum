@@ -86,8 +86,8 @@ github.com/ashanbrown/forbidigo v1.6.0 h1:D3aewfM37Yb3pxHujIPSpTf6oQk9sc9WZi8ger
 github.com/ashanbrown/forbidigo v1.6.0/go.mod h1:Y8j9jy9ZYAEHXdu723cUlraTqbzjKF1MUyfOKL+AjcU=
 github.com/ashanbrown/makezero v1.2.0 h1:/2Lp1bypdmK9wDIq7uWBlDF1iMUpIIS4A+pF6C9IEUU=
 github.com/ashanbrown/makezero v1.2.0/go.mod h1:dxlPhHbDMC6N6xICzFBSK+4njQDdK8euNO0qjQMtGY4=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.187.0 h1:SLeWauf+AgEC0dCZM79pNKnI+FqMtqlKgkJjnzc4hUk=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.187.0/go.mod h1:9ENCp/SkuTkIrAxG0cEdAD1QCC+QfpN82ukwrbwzwGE=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.188.0 h1:xI1vFGAamwW5f9bXL5D1JByU55U9RQ3M0zLruly+5Xw=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.188.0/go.mod h1:9ENCp/SkuTkIrAxG0cEdAD1QCC+QfpN82ukwrbwzwGE=
 github.com/aws/aws-lambda-go v1.47.0 h1:0H8s0vumYx/YKs4sE7YM0ktwL2eWse+kfopsRI1sXVI=
 github.com/aws/aws-lambda-go v1.47.0/go.mod h1:dpMpZgvWx5vuQJfBt0zqBha60q7Dd7RfgJv23DymV8A=
 github.com/aws/aws-sdk-go-v2 v1.36.3 h1:mJoei2CxPutQVxaATCzDUjcZEjVRdpsiiXi2o38yqWM=

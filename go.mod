@@ -4,12 +4,12 @@ go 1.24
 
 require (
 	github.com/alexflint/go-arg v1.5.1
-	github.com/aws/aws-cdk-go/awscdk/v2 v2.194.0
+	github.com/aws/aws-cdk-go/awscdk/v2 v2.195.0
 	github.com/aws/aws-lambda-go v1.48.0
 	github.com/aws/aws-sdk-go-v2 v1.36.3
 	github.com/aws/aws-sdk-go-v2/config v1.29.14
 	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.48.0
-	github.com/aws/aws-sdk-go-v2/service/ec2 v1.215.0
+	github.com/aws/aws-sdk-go-v2/service/ec2 v1.216.0
 	github.com/aws/aws-sdk-go-v2/service/ecs v1.56.3
 	github.com/aws/aws-sdk-go-v2/service/route53 v1.51.1
 	github.com/aws/aws-sdk-go-v2/service/sns v1.34.4
@@ -35,7 +35,7 @@ require (
 	github.com/aws/smithy-go v1.22.2 // indirect
 	github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.229 // indirect
 	github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.0 // indirect
-	github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v41 v41.0.0 // indirect
+	github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v41 v41.2.0 // indirect
 	github.com/fatih/color v1.18.0 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/google/go-cmp v0.7.0 // indirect

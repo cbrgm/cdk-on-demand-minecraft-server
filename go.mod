@@ -3,7 +3,7 @@ module github.com/cbrgm/cdk-on-demand-minecraft-server
 go 1.24
 
 require (
-	github.com/alexflint/go-arg v1.5.1
+	github.com/alexflint/go-arg v1.6.0
 	github.com/aws/aws-cdk-go/awscdk/v2 v2.204.0
 	github.com/aws/aws-lambda-go v1.49.0
 	github.com/aws/aws-sdk-go-v2 v1.36.5

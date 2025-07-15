@@ -4,7 +4,7 @@ go 1.24
 
 require (
 	github.com/alexflint/go-arg v1.6.0
-	github.com/aws/aws-cdk-go/awscdk/v2 v2.204.0
+	github.com/aws/aws-cdk-go/awscdk/v2 v2.205.0
 	github.com/aws/aws-lambda-go v1.49.0
 	github.com/aws/aws-sdk-go-v2 v1.36.5
 	github.com/aws/aws-sdk-go-v2/config v1.29.17

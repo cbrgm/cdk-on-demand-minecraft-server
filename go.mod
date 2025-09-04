@@ -14,7 +14,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/route53 v1.58.0
 	github.com/aws/aws-sdk-go-v2/service/sns v1.38.1
 	github.com/aws/constructs-go/constructs/v10 v10.4.2
-	github.com/aws/jsii-runtime-go v1.113.0
+	github.com/aws/jsii-runtime-go v1.114.1
 	github.com/shirou/gopsutil v3.21.11+incompatible
 )
 
@@ -44,8 +44,8 @@ require (
 	github.com/yuin/goldmark v1.4.13 // indirect
 	github.com/yusufpapurcu/wmi v1.2.4 // indirect
 	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616 // indirect
-	golang.org/x/mod v0.26.0 // indirect
+	golang.org/x/mod v0.27.0 // indirect
 	golang.org/x/sync v0.16.0 // indirect
-	golang.org/x/sys v0.34.0 // indirect
-	golang.org/x/tools v0.35.0 // indirect
+	golang.org/x/sys v0.35.0 // indirect
+	golang.org/x/tools v0.36.0 // indirect
 )

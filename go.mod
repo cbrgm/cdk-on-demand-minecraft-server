@@ -4,7 +4,7 @@ go 1.24
 
 require (
 	github.com/alexflint/go-arg v1.6.0
-	github.com/aws/aws-cdk-go/awscdk/v2 v2.222.0
+	github.com/aws/aws-cdk-go/awscdk/v2 v2.223.0
 	github.com/aws/aws-lambda-go v1.50.0
 	github.com/aws/aws-sdk-go-v2 v1.39.6
 	github.com/aws/aws-sdk-go-v2/config v1.31.17
@@ -14,7 +14,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/route53 v1.59.3
 	github.com/aws/aws-sdk-go-v2/service/sns v1.39.3
 	github.com/aws/constructs-go/constructs/v10 v10.4.3
-	github.com/aws/jsii-runtime-go v1.118.0
+	github.com/aws/jsii-runtime-go v1.119.0
 	github.com/shirou/gopsutil v3.21.11+incompatible
 )
 

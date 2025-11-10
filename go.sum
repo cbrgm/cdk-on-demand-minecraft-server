@@ -4,8 +4,8 @@ github.com/alexflint/go-arg v1.6.0 h1:wPP9TwTPO54fUVQl4nZoxbFfKCcy5E6HBCumj1XVRS
 github.com/alexflint/go-arg v1.6.0/go.mod h1:A7vTJzvjoaSTypg4biM5uYNTkJ27SkNTArtYXnlqVO8=
 github.com/alexflint/go-scalar v1.2.0 h1:WR7JPKkeNpnYIOfHRa7ivM21aWAdHD0gEWHCx+WQBRw=
 github.com/alexflint/go-scalar v1.2.0/go.mod h1:LoFvNMqS1CPrMVltza4LvnGKhaSpc3oyLEBUZVhhS2o=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.222.0 h1:eRsk4yeJnuWBzmSOZevx7QPnGlX28oBij+73IWl5Y/M=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.222.0/go.mod h1:v0W0Wk/BXd6GthMVhJj6HyRMT0uVMsTFOyaogMIeH74=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.223.0 h1:wUkfsRgfIzFcQm2ktChEg74SAcG66km2HXaNVOW28BM=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.223.0/go.mod h1:v0W0Wk/BXd6GthMVhJj6HyRMT0uVMsTFOyaogMIeH74=
 github.com/aws/aws-lambda-go v1.50.0 h1:0GzY18vT4EsCvIyk3kn3ZH5Jg30NRlgYaai1w0aGPMU=
 github.com/aws/aws-lambda-go v1.50.0/go.mod h1:dpMpZgvWx5vuQJfBt0zqBha60q7Dd7RfgJv23DymV8A=
 github.com/aws/aws-sdk-go-v2 v1.39.6 h1:2JrPCVgWJm7bm83BDwY5z8ietmeJUbh3O2ACnn+Xsqk=
@@ -46,8 +46,8 @@ github.com/aws/aws-sdk-go-v2/service/sts v1.39.1 h1:mLlUgHn02ue8whiR4BmxxGJLR2gw
 github.com/aws/aws-sdk-go-v2/service/sts v1.39.1/go.mod h1:E19xDjpzPZC7LS2knI9E6BaRFDK43Eul7vd6rSq2HWk=
 github.com/aws/constructs-go/constructs/v10 v10.4.3 h1:x2j8RzlBhjyQvK9aZ74C34bQkP+ORQHOn0ZAPz81l6I=
 github.com/aws/constructs-go/constructs/v10 v10.4.3/go.mod h1:DIGkbU2Lety5CkEfL2MoJI2azg1p2xqpo8MXjp88qXE=
-github.com/aws/jsii-runtime-go v1.118.0 h1:Hgptovr6bRggE9OdbcdXgdMZLyi4sXd/9B0Rw+DoxI0=
-github.com/aws/jsii-runtime-go v1.118.0/go.mod h1:67f+oydH0cMr//tkmNNj9QpKk02hNEEVu4CByxkpGB0=
+github.com/aws/jsii-runtime-go v1.119.0 h1:lqrlBOUxzthDn8Mtzw+1R1mu972KT8fFx2GnOgN4MUE=
+github.com/aws/jsii-runtime-go v1.119.0/go.mod h1:67f+oydH0cMr//tkmNNj9QpKk02hNEEVu4CByxkpGB0=
 github.com/aws/smithy-go v1.23.2 h1:Crv0eatJUQhaManss33hS5r40CG3ZFH+21XSkqMrIUM=
 github.com/aws/smithy-go v1.23.2/go.mod h1:LEj2LM3rBRQJxPZTB4KuzZkaZYnZPnvgIhb4pu07mx0=
 github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.242 h1:S+uSK6PJ3gbS5imAcMT198W5a/kNbICkpLy0cpV7RO8=

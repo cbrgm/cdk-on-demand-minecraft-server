@@ -4,8 +4,8 @@ github.com/alexflint/go-arg v1.6.0 h1:wPP9TwTPO54fUVQl4nZoxbFfKCcy5E6HBCumj1XVRS
 github.com/alexflint/go-arg v1.6.0/go.mod h1:A7vTJzvjoaSTypg4biM5uYNTkJ27SkNTArtYXnlqVO8=
 github.com/alexflint/go-scalar v1.2.0 h1:WR7JPKkeNpnYIOfHRa7ivM21aWAdHD0gEWHCx+WQBRw=
 github.com/alexflint/go-scalar v1.2.0/go.mod h1:LoFvNMqS1CPrMVltza4LvnGKhaSpc3oyLEBUZVhhS2o=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.224.0 h1:El9Ukcr4qje+Ufm9W4BjoBBeDg1moKyH8XiY7ZINo94=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.224.0/go.mod h1:EsSENvkUgROR6gLf8pGk/tRvNFanSdp7Gn5cLXBRyxY=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.225.0 h1:MdiKSQ/DGT7LLk0Ib7zZy3rNmnaJRs18GEZjVasokOI=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.225.0/go.mod h1:EsSENvkUgROR6gLf8pGk/tRvNFanSdp7Gn5cLXBRyxY=
 github.com/aws/aws-lambda-go v1.50.0 h1:0GzY18vT4EsCvIyk3kn3ZH5Jg30NRlgYaai1w0aGPMU=
 github.com/aws/aws-lambda-go v1.50.0/go.mod h1:dpMpZgvWx5vuQJfBt0zqBha60q7Dd7RfgJv23DymV8A=
 github.com/aws/aws-sdk-go-v2 v1.39.6 h1:2JrPCVgWJm7bm83BDwY5z8ietmeJUbh3O2ACnn+Xsqk=

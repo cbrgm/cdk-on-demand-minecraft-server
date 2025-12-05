@@ -10,7 +10,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/config v1.32.3
 	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.62.0
 	github.com/aws/aws-sdk-go-v2/service/ec2 v1.275.1
-	github.com/aws/aws-sdk-go-v2/service/ecs v1.69.2
+	github.com/aws/aws-sdk-go-v2/service/ecs v1.69.3
 	github.com/aws/aws-sdk-go-v2/service/route53 v1.61.1
 	github.com/aws/aws-sdk-go-v2/service/sns v1.39.8
 	github.com/aws/constructs-go/constructs/v10 v10.4.3

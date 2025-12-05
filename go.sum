@@ -4,8 +4,8 @@ github.com/alexflint/go-arg v1.6.0 h1:wPP9TwTPO54fUVQl4nZoxbFfKCcy5E6HBCumj1XVRS
 github.com/alexflint/go-arg v1.6.0/go.mod h1:A7vTJzvjoaSTypg4biM5uYNTkJ27SkNTArtYXnlqVO8=
 github.com/alexflint/go-scalar v1.2.0 h1:WR7JPKkeNpnYIOfHRa7ivM21aWAdHD0gEWHCx+WQBRw=
 github.com/alexflint/go-scalar v1.2.0/go.mod h1:LoFvNMqS1CPrMVltza4LvnGKhaSpc3oyLEBUZVhhS2o=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.231.0 h1:FG64tc0dypEO0zlTmqUNFAaEP04MEs5KumnzeL7PPo4=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.231.0/go.mod h1:EsSENvkUgROR6gLf8pGk/tRvNFanSdp7Gn5cLXBRyxY=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.232.0 h1:0sj/kf7AKxzyihNPCFTMa77lRmbtLSfL5oYqJaQbzVY=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.232.0/go.mod h1:iNg8HWCTBI6HAhvtKYTA0+RAKa01M6I3dkEEEMn7RLM=
 github.com/aws/aws-lambda-go v1.50.0 h1:0GzY18vT4EsCvIyk3kn3ZH5Jg30NRlgYaai1w0aGPMU=
 github.com/aws/aws-lambda-go v1.50.0/go.mod h1:dpMpZgvWx5vuQJfBt0zqBha60q7Dd7RfgJv23DymV8A=
 github.com/aws/aws-sdk-go-v2 v1.40.1 h1:difXb4maDZkRH0x//Qkwcfpdg1XQVXEAEs2DdXldFFc=
@@ -56,8 +56,8 @@ github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.242 h1:S+uSK6PJ3gbS5i
 github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.242/go.mod h1:1FHlu1VKVvrE/Bmcow4crPddJlOWhEXde/Zi4TcUhkA=
 github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.0 h1:kElXjprC8wkpJu58vp+WFH6z0AJw4zitg5iSKJPKe3c=
 github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.0/go.mod h1:JY4UnvNa1YDGQ4H5wohXTHl6YVY3uCDUWl4JYUrQfb8=
-github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v48 v48.6.0 h1:SPHeyuUpzOIlOLoN3+GmXP9mnp1dg/vBQjMGcvjbUJY=
-github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v48 v48.6.0/go.mod h1:tU0qCwP3c5tGsT86aKrvjkd6i72pAJnIhcZfcsJfpKY=
+github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v48 v48.20.0 h1:xIOiSJPMXeM6SxfmqtMms+TOwaxuSii5ZvUUBdCIvvQ=
+github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v48 v48.20.0/go.mod h1:Mv/KtlUxCbyDI6hGu+YgEXn/nBsJ7WfQnUOw9zyBHvU=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/fatih/color v1.18.0 h1:S8gINlzdQ840/4pfAwic/ZE0djQEH3wM94VfqLTZcOM=

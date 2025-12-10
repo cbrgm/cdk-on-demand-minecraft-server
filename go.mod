@@ -7,12 +7,12 @@ require (
 	github.com/aws/aws-cdk-go/awscdk/v2 v2.232.1
 	github.com/aws/aws-lambda-go v1.51.0
 	github.com/aws/aws-sdk-go-v2 v1.41.0
-	github.com/aws/aws-sdk-go-v2/config v1.32.4
-	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.62.1
-	github.com/aws/aws-sdk-go-v2/service/ec2 v1.276.0
-	github.com/aws/aws-sdk-go-v2/service/ecs v1.69.4
+	github.com/aws/aws-sdk-go-v2/config v1.32.5
+	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.62.2
+	github.com/aws/aws-sdk-go-v2/service/ec2 v1.276.1
+	github.com/aws/aws-sdk-go-v2/service/ecs v1.69.5
 	github.com/aws/aws-sdk-go-v2/service/route53 v1.61.2
-	github.com/aws/aws-sdk-go-v2/service/sns v1.39.9
+	github.com/aws/aws-sdk-go-v2/service/sns v1.39.10
 	github.com/aws/constructs-go/constructs/v10 v10.4.3
 	github.com/aws/jsii-runtime-go v1.121.0
 	github.com/shirou/gopsutil v3.21.11+incompatible
@@ -22,7 +22,7 @@ require (
 	github.com/Masterminds/semver/v3 v3.4.0 // indirect
 	github.com/alexflint/go-scalar v1.2.0 // indirect
 	github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.7.4 // indirect
-	github.com/aws/aws-sdk-go-v2/credentials v1.19.4 // indirect
+	github.com/aws/aws-sdk-go-v2/credentials v1.19.5 // indirect
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.18.16 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/configsources v1.4.16 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.7.16 // indirect
@@ -32,7 +32,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/signin v1.0.4 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sso v1.30.7 // indirect
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.35.12 // indirect
-	github.com/aws/aws-sdk-go-v2/service/sts v1.41.4 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sts v1.41.5 // indirect
 	github.com/aws/smithy-go v1.24.0 // indirect
 	github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.242 // indirect
 	github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.0 // indirect

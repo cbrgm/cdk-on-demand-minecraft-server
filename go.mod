@@ -8,8 +8,8 @@ require (
 	github.com/aws/aws-lambda-go v1.51.0
 	github.com/aws/aws-sdk-go-v2 v1.41.0
 	github.com/aws/aws-sdk-go-v2/config v1.32.5
-	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.62.2
-	github.com/aws/aws-sdk-go-v2/service/ec2 v1.276.1
+	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.63.0
+	github.com/aws/aws-sdk-go-v2/service/ec2 v1.277.0
 	github.com/aws/aws-sdk-go-v2/service/ecs v1.69.5
 	github.com/aws/aws-sdk-go-v2/service/route53 v1.62.0
 	github.com/aws/aws-sdk-go-v2/service/sns v1.39.10

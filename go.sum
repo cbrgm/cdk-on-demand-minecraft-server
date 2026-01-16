@@ -4,10 +4,10 @@ github.com/alexflint/go-arg v1.6.1 h1:uZogJ6VDBjcuosydKgvYYRhh9sRCusjOvoOLZopBln
 github.com/alexflint/go-arg v1.6.1/go.mod h1:nQ0LFYftLJ6njcaee0sU+G0iS2+2XJQfA8I062D0LGc=
 github.com/alexflint/go-scalar v1.2.0 h1:WR7JPKkeNpnYIOfHRa7ivM21aWAdHD0gEWHCx+WQBRw=
 github.com/alexflint/go-scalar v1.2.0/go.mod h1:LoFvNMqS1CPrMVltza4LvnGKhaSpc3oyLEBUZVhhS2o=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.234.1 h1:Nwik+32Bq4pndm2aTwlDsIrhDaxCaXQjcWMa7NfRdq0=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.234.1/go.mod h1:ZJqmS0FURjLi5oAOMTBoxq/vXCSX9N/VDp1pLZlvbqg=
-github.com/aws/aws-lambda-go v1.51.2 h1:U4cuQ52dOLUV0t72TCspLEnWob6jkwTfjIrXr5LE3/c=
-github.com/aws/aws-lambda-go v1.51.2/go.mod h1:dpMpZgvWx5vuQJfBt0zqBha60q7Dd7RfgJv23DymV8A=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.235.0 h1:dDjplBQQmsEIkuJsriIN+UQ+qWyWnCCT0fBbdRhvKd0=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.235.0/go.mod h1:hKEh17zZXzP8GStIg1V0QhigO0O39RjXj/gsW3olas8=
+github.com/aws/aws-lambda-go v1.52.0 h1:5NfiRaVl9FafUIt2Ld/Bv22kT371mfAI+l1Hd+tV7ZE=
+github.com/aws/aws-lambda-go v1.52.0/go.mod h1:dpMpZgvWx5vuQJfBt0zqBha60q7Dd7RfgJv23DymV8A=
 github.com/aws/aws-sdk-go-v2 v1.41.1 h1:ABlyEARCDLN034NhxlRUSZr4l71mh+T5KAeGh6cerhU=
 github.com/aws/aws-sdk-go-v2 v1.41.1/go.mod h1:MayyLB8y+buD9hZqkCW3kX1AKq07Y5pXxtgB+rRFhz0=
 github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.7.4 h1:489krEF9xIGkOaaX3CE/Be2uWjiXrkCH6gUX+bZA/BU=
@@ -28,8 +28,8 @@ github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.63.1 h1:l65dmgr7tO26EcHe6
 github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.63.1/go.mod h1:wvnXh1w1pGS2UpEvPTKSjXYuxiXhuvob/IMaK2AWvek=
 github.com/aws/aws-sdk-go-v2/service/ec2 v1.279.2 h1:MG12Z/W1zzJLkw2gCU2gKZ872rqLM0pi9LdkZ/z3FHc=
 github.com/aws/aws-sdk-go-v2/service/ec2 v1.279.2/go.mod h1:Uy+C+Sc58jozdoL1McQr8bDsEvNFx+/nBY+vpO1HVUY=
-github.com/aws/aws-sdk-go-v2/service/ecs v1.70.1 h1:3USGpUZbK84ZuMh5vdFj/I5W+N4DrarfASdrjVBETvc=
-github.com/aws/aws-sdk-go-v2/service/ecs v1.70.1/go.mod h1:pMlGFDpHoLTJOIZHGdJOAWmi+xeIlQXuFTuQxs1epYE=
+github.com/aws/aws-sdk-go-v2/service/ecs v1.71.0 h1:MzP/ElwTpINq+hS80ZQz4epKVnUTlz8Sz+P/AFORCKM=
+github.com/aws/aws-sdk-go-v2/service/ecs v1.71.0/go.mod h1:pMlGFDpHoLTJOIZHGdJOAWmi+xeIlQXuFTuQxs1epYE=
 github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.13.4 h1:0ryTNEdJbzUCEWkVXEXoqlXV72J5keC1GvILMOuD00E=
 github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.13.4/go.mod h1:HQ4qwNZh32C3CBeO6iJLQlgtMzqeG17ziAA/3KDJFow=
 github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.13.17 h1:RuNSMoozM8oXlgLG/n6WLaFGoea7/CddrCfIiSA+xdY=
@@ -52,8 +52,8 @@ github.com/aws/jsii-runtime-go v1.125.0 h1:s5gM2ATWcCPQS61G5WHZZiqjUqejZFjed702O
 github.com/aws/jsii-runtime-go v1.125.0/go.mod h1:67f+oydH0cMr//tkmNNj9QpKk02hNEEVu4CByxkpGB0=
 github.com/aws/smithy-go v1.24.0 h1:LpilSUItNPFr1eY85RYgTIg5eIEPtvFbskaFcmmIUnk=
 github.com/aws/smithy-go v1.24.0/go.mod h1:LEj2LM3rBRQJxPZTB4KuzZkaZYnZPnvgIhb4pu07mx0=
-github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.258 h1:J4HmD0uftzmpUnEKJaPBgUW2iknyCLG5aCnp9+Jqtxc=
-github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.258/go.mod h1:dNsPHPyf2hPNpuQl3Q17alwC6nEQWf+BSRUbp+7faNY=
+github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.261 h1:1GuMxmibE09Etubch2vHk19qFC8ILckyLECXysZhvdM=
+github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.261/go.mod h1:pQx6AJJlqdc7mbkWASwwlYobLIu3TiiLV24MPDl2q4w=
 github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.0 h1:kElXjprC8wkpJu58vp+WFH6z0AJw4zitg5iSKJPKe3c=
 github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.0/go.mod h1:JY4UnvNa1YDGQ4H5wohXTHl6YVY3uCDUWl4JYUrQfb8=
 github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v48 v48.20.0 h1:xIOiSJPMXeM6SxfmqtMms+TOwaxuSii5ZvUUBdCIvvQ=

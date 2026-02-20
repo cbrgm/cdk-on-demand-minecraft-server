@@ -4,8 +4,8 @@ github.com/alexflint/go-arg v1.6.1 h1:uZogJ6VDBjcuosydKgvYYRhh9sRCusjOvoOLZopBln
 github.com/alexflint/go-arg v1.6.1/go.mod h1:nQ0LFYftLJ6njcaee0sU+G0iS2+2XJQfA8I062D0LGc=
 github.com/alexflint/go-scalar v1.2.0 h1:WR7JPKkeNpnYIOfHRa7ivM21aWAdHD0gEWHCx+WQBRw=
 github.com/alexflint/go-scalar v1.2.0/go.mod h1:LoFvNMqS1CPrMVltza4LvnGKhaSpc3oyLEBUZVhhS2o=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.238.0 h1:N/lbEdzRSyG1D32Q1CrYidON5lkwZXwlmLqSbOFmNp4=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.238.0/go.mod h1:pY8b8Nk6V8pX2H/4kb9s3Lv0OyCqEut+vVdAn1g3nC0=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.239.0 h1:ofm3GtJ4n+Tw4X/5VhvlhQzGj+I/wBzFwk/Wl0eHi3w=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.239.0/go.mod h1:FBrSV7OjUy86d1J77UCSebD2aubtYV87GkvSuWIlR1w=
 github.com/aws/aws-lambda-go v1.52.0 h1:5NfiRaVl9FafUIt2Ld/Bv22kT371mfAI+l1Hd+tV7ZE=
 github.com/aws/aws-lambda-go v1.52.0/go.mod h1:dpMpZgvWx5vuQJfBt0zqBha60q7Dd7RfgJv23DymV8A=
 github.com/aws/aws-sdk-go-v2 v1.41.1 h1:ABlyEARCDLN034NhxlRUSZr4l71mh+T5KAeGh6cerhU=
@@ -26,8 +26,8 @@ github.com/aws/aws-sdk-go-v2/internal/ini v1.8.4 h1:WKuaxf++XKWlHWu9ECbMlha8WOEG
 github.com/aws/aws-sdk-go-v2/internal/ini v1.8.4/go.mod h1:ZWy7j6v1vWGmPReu0iSGvRiise4YI5SkR3OHKTZ6Wuc=
 github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.63.1 h1:l65dmgr7tO26EcHe6WMdseRnFLoJ2nqdkPz1nJdXfaw=
 github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.63.1/go.mod h1:wvnXh1w1pGS2UpEvPTKSjXYuxiXhuvob/IMaK2AWvek=
-github.com/aws/aws-sdk-go-v2/service/ec2 v1.287.0 h1:x5ycTw2qnOcyLxc9kREuOb512899tMg/wFOdyqgd2bQ=
-github.com/aws/aws-sdk-go-v2/service/ec2 v1.287.0/go.mod h1:Uy+C+Sc58jozdoL1McQr8bDsEvNFx+/nBY+vpO1HVUY=
+github.com/aws/aws-sdk-go-v2/service/ec2 v1.290.0 h1:Ub4CvLWf8wEQ7/pEiqXM9tTsHXf2BokPLwbqEvrmAq0=
+github.com/aws/aws-sdk-go-v2/service/ec2 v1.290.0/go.mod h1:Uy+C+Sc58jozdoL1McQr8bDsEvNFx+/nBY+vpO1HVUY=
 github.com/aws/aws-sdk-go-v2/service/ecs v1.71.0 h1:MzP/ElwTpINq+hS80ZQz4epKVnUTlz8Sz+P/AFORCKM=
 github.com/aws/aws-sdk-go-v2/service/ecs v1.71.0/go.mod h1:pMlGFDpHoLTJOIZHGdJOAWmi+xeIlQXuFTuQxs1epYE=
 github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.13.4 h1:0ryTNEdJbzUCEWkVXEXoqlXV72J5keC1GvILMOuD00E=
@@ -46,8 +46,8 @@ github.com/aws/aws-sdk-go-v2/service/ssooidc v1.35.14 h1:0jbJeuEHlwKJ9PfXtpSFc4M
 github.com/aws/aws-sdk-go-v2/service/ssooidc v1.35.14/go.mod h1:sTGThjphYE4Ohw8vJiRStAcu3rbjtXRsdNB0TvZ5wwo=
 github.com/aws/aws-sdk-go-v2/service/sts v1.41.6 h1:5fFjR/ToSOzB2OQ/XqWpZBmNvmP/pJ1jOWYlFDJTjRQ=
 github.com/aws/aws-sdk-go-v2/service/sts v1.41.6/go.mod h1:qgFDZQSD/Kys7nJnVqYlWKnh0SSdMjAi0uSwON4wgYQ=
-github.com/aws/constructs-go/constructs/v10 v10.4.5 h1:sI7BEPucBQmbotxUF78qpCh4wP0ABvyinDLG7SOZIGE=
-github.com/aws/constructs-go/constructs/v10 v10.4.5/go.mod h1:L0tXWpvmTRneeFNX4efyD1haL1wQudQGHVXZWuLw74k=
+github.com/aws/constructs-go/constructs/v10 v10.5.1 h1:GYyCMb2QmJl/o4EMbS3LVqh/kRlLLBVsxzmV40jxOKY=
+github.com/aws/constructs-go/constructs/v10 v10.5.1/go.mod h1:ZvLfkgiTKlbQhPYkZhWk+hPkevdX55ZeXQ2XqfC3xTw=
 github.com/aws/jsii-runtime-go v1.126.0 h1:cT+yo8OMyWjgzXm7Pvy5Hq36irSIZ7bL/ds33YVDrEk=
 github.com/aws/jsii-runtime-go v1.126.0/go.mod h1:67f+oydH0cMr//tkmNNj9QpKk02hNEEVu4CByxkpGB0=
 github.com/aws/smithy-go v1.24.0 h1:LpilSUItNPFr1eY85RYgTIg5eIEPtvFbskaFcmmIUnk=
@@ -56,8 +56,8 @@ github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.263 h1:lklcDiqF0Pn1gm
 github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.263/go.mod h1:pQx6AJJlqdc7mbkWASwwlYobLIu3TiiLV24MPDl2q4w=
 github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.0 h1:kElXjprC8wkpJu58vp+WFH6z0AJw4zitg5iSKJPKe3c=
 github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.0/go.mod h1:JY4UnvNa1YDGQ4H5wohXTHl6YVY3uCDUWl4JYUrQfb8=
-github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v48 v48.20.0 h1:xIOiSJPMXeM6SxfmqtMms+TOwaxuSii5ZvUUBdCIvvQ=
-github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v48 v48.20.0/go.mod h1:Mv/KtlUxCbyDI6hGu+YgEXn/nBsJ7WfQnUOw9zyBHvU=
+github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v50 v50.4.0 h1:BJFtfgG1q+prpcWHjRBrBnFVkbANVPt50+IyzGmDjm0=
+github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v50 v50.4.0/go.mod h1:BaMpV0CHovDzzwqpZbhtcl+E5wS02ZTWnoO6C/kElhw=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/fatih/color v1.18.0 h1:S8gINlzdQ840/4pfAwic/ZE0djQEH3wM94VfqLTZcOM=

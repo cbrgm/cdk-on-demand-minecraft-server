@@ -1,6 +1,6 @@
 module github.com/cbrgm/cdk-on-demand-minecraft-server
 
-go 1.24
+go 1.25.0
 
 require (
 	github.com/alexflint/go-arg v1.6.1
@@ -14,7 +14,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/route53 v1.62.2
 	github.com/aws/aws-sdk-go-v2/service/sns v1.39.12
 	github.com/aws/constructs-go/constructs/v10 v10.5.1
-	github.com/aws/jsii-runtime-go v1.126.0
+	github.com/aws/jsii-runtime-go v1.127.0
 	github.com/shirou/gopsutil v3.21.11+incompatible
 )
 
@@ -42,11 +42,14 @@ require (
 	github.com/google/go-cmp v0.7.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
-	github.com/yuin/goldmark v1.4.13 // indirect
+	github.com/yuin/goldmark v1.7.16 // indirect
 	github.com/yusufpapurcu/wmi v1.2.4 // indirect
-	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616 // indirect
-	golang.org/x/mod v0.27.0 // indirect
-	golang.org/x/sync v0.16.0 // indirect
-	golang.org/x/sys v0.35.0 // indirect
-	golang.org/x/tools v0.36.0 // indirect
+	golang.org/x/lint v0.0.0-20241112194109-818c5a804067 // indirect
+	golang.org/x/mod v0.33.0 // indirect
+	golang.org/x/sync v0.19.0 // indirect
+	golang.org/x/sys v0.41.0 // indirect
+	golang.org/x/telemetry v0.0.0-20260213145524-e0ab670178e1 // indirect
+	golang.org/x/tools v0.42.0 // indirect
+	golang.org/x/tools/cmd/godoc v0.1.0-deprecated // indirect
+	golang.org/x/tools/godoc v0.1.0-deprecated // indirect
 )

@@ -5,7 +5,7 @@ go 1.25.0
 require (
 	github.com/alexflint/go-arg v1.6.1
 	github.com/aws/aws-cdk-go/awscdk/v2 v2.241.0
-	github.com/aws/aws-lambda-go v1.52.0
+	github.com/aws/aws-lambda-go v1.53.0
 	github.com/aws/aws-sdk-go-v2 v1.41.2
 	github.com/aws/aws-sdk-go-v2/config v1.32.10
 	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.63.2

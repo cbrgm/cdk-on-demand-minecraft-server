@@ -24,8 +24,8 @@ github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.7.27 h1:9d8AoASQY9UwrOSmiJ
 github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.7.27/go.mod h1:x0rldpsnUQaQIs4Rh+Vwm9Z/0vI6BxadGtsgJfZFb8s=
 github.com/aws/aws-sdk-go-v2/internal/v4a v1.4.28 h1:eaS9vwQ5ym4Y9S6+G/K3d3lgZhxs9Sldcn/YS7cmdKY=
 github.com/aws/aws-sdk-go-v2/internal/v4a v1.4.28/go.mod h1:oTdbDr+BMs7gAYrNpD0LDTyqQfv6yOYgTDv46+xbwFY=
-github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.74.4 h1:4GBRq2ZWJkOy6S4HRNuJJpaZ5KXPNIDe/QJysoyXglI=
-github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.74.4/go.mod h1:Op4lD9kBH1InUC+DxIALi0ALAASdpY71vRdtevYFVrs=
+github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.75.0 h1:LiRIJ9natF7OIkzBMseCT5/ViP3TVfiGyX6lMr28/eY=
+github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.75.0/go.mod h1:Op4lD9kBH1InUC+DxIALi0ALAASdpY71vRdtevYFVrs=
 github.com/aws/aws-sdk-go-v2/service/ec2 v1.305.1 h1:VKg93r3Qt8WuqK9AG1g/pp4fvr7jZ8hP2+ycT3uu8YY=
 github.com/aws/aws-sdk-go-v2/service/ec2 v1.305.1/go.mod h1:pgzclBlyCKPExJtqLzDpYWGVPU3+y4UzMWumn+6gSAk=
 github.com/aws/aws-sdk-go-v2/service/ecs v1.82.2 h1:5+R0WdILivVBjS2XWGolf2xNLrAobmRJapbuY80rM0M=
@@ -48,8 +48,8 @@ github.com/aws/aws-sdk-go-v2/service/sts v1.43.1 h1:r/vUkpLilfCA3sxbRnkHbJejaoVH
 github.com/aws/aws-sdk-go-v2/service/sts v1.43.1/go.mod h1:t01JURC8Fe5M+7R1K0vzIZ2NT04HqvZR+FjlHrHDT2A=
 github.com/aws/constructs-go/constructs/v10 v10.6.0 h1:fYUtscoB7dhGXBFuO1o6qvgYzkKUV2rMQna/n3O7Y/4=
 github.com/aws/constructs-go/constructs/v10 v10.6.0/go.mod h1:/OFJ5HMGSjXyjQ4mNz32+XGA7S0S3ZWDXYtBSAuurEE=
-github.com/aws/jsii-runtime-go v1.133.0 h1:8IZLAVnv8kfEyCyRJ6koLgOuIJUmWGsu5FH0NVupvwo=
-github.com/aws/jsii-runtime-go v1.133.0/go.mod h1:m6/l4BI57CzDtSuysodcHnGW/ha4keAxUDWk1zDOrzo=
+github.com/aws/jsii-runtime-go v1.134.0 h1:4Vx5eddqekbITT7G6S15AwS4W9vIU0tiQpEUNTy80ok=
+github.com/aws/jsii-runtime-go v1.134.0/go.mod h1:m6/l4BI57CzDtSuysodcHnGW/ha4keAxUDWk1zDOrzo=
 github.com/aws/smithy-go v1.27.0 h1:ZoFioDKJxkSIW2otF9T0aPtNlUwhdVCcuZh/rzH9Hus=
 github.com/aws/smithy-go v1.27.0/go.mod h1:YE2RhdIuDbA5E5bTdciG9KrW3+TiEONeUWCqxX9i1Fc=
 github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.273 h1:wFlYbk2NsBLXdToVoLe+BoOBzqYOEGvSc3fIurb/OWQ=

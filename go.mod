@@ -4,7 +4,7 @@ go 1.25.0
 
 require (
 	github.com/alexflint/go-arg v1.6.1
-	github.com/aws/aws-cdk-go/awscdk/v2 v2.257.0
+	github.com/aws/aws-cdk-go/awscdk/v2 v2.258.0
 	github.com/aws/aws-lambda-go v1.54.0
 	github.com/aws/aws-sdk-go-v2 v1.41.12
 	github.com/aws/aws-sdk-go-v2/config v1.32.23
@@ -12,7 +12,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ec2 v1.305.2
 	github.com/aws/aws-sdk-go-v2/service/ecs v1.82.3
 	github.com/aws/aws-sdk-go-v2/service/route53 v1.63.2
-	github.com/aws/aws-sdk-go-v2/service/sns v1.39.21
+	github.com/aws/aws-sdk-go-v2/service/sns v1.40.0
 	github.com/aws/constructs-go/constructs/v10 v10.6.0
 	github.com/aws/jsii-runtime-go v1.134.0
 	github.com/shirou/gopsutil v3.21.11+incompatible
@@ -34,9 +34,9 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.36.5 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.43.2 // indirect
 	github.com/aws/smithy-go v1.27.1 // indirect
-	github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.273 // indirect
-	github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.1 // indirect
-	github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v53 v53.25.0 // indirect
+	github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.282 // indirect
+	github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.2 // indirect
+	github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v54 v54.1.0 // indirect
 	github.com/fatih/color v1.19.0 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/google/go-cmp v0.7.0 // indirect

@@ -46,8 +46,8 @@ github.com/aws/aws-sdk-go-v2/service/ssooidc v1.38.2 h1:9eTqUYl+SyVmaRPMyBXSO9ww
 github.com/aws/aws-sdk-go-v2/service/ssooidc v1.38.2/go.mod h1:DThweuz22kiLc7lGHop5vQ9c3bx5W6Azs/YqSHa2fu8=
 github.com/aws/aws-sdk-go-v2/service/sts v1.45.2 h1:EJd8vZO3E8SE6nmPqxuxlQ1NeSb8as50sf6eGdV4Saw=
 github.com/aws/aws-sdk-go-v2/service/sts v1.45.2/go.mod h1:OgpPvKzsO2Ranjpli/20djMkg6UrV5mw4W3pZpq1Mqo=
-github.com/aws/constructs-go/constructs/v10 v10.7.2 h1:N03kGx4x9bW0HA1ZSeRn/Fhdrjouegih9lshJMp0kvI=
-github.com/aws/constructs-go/constructs/v10 v10.7.2/go.mod h1:UK5AwSnhkq3F8CUVRn7bgsm5ntL/kwokzaze8dHBGBI=
+github.com/aws/constructs-go/constructs/v10 v10.8.0 h1:678UF1G5SMNJf9lt7ds/FH1rBisv2BXL07DXWlSLTM0=
+github.com/aws/constructs-go/constructs/v10 v10.8.0/go.mod h1:UK5AwSnhkq3F8CUVRn7bgsm5ntL/kwokzaze8dHBGBI=
 github.com/aws/jsii-runtime-go v1.139.0 h1:DztokuBoSq07v37guk9a/iVA7anRbXxceE7n1uCamBA=
 github.com/aws/jsii-runtime-go v1.139.0/go.mod h1:vvtBJq3wyyJu4sLicDayzacDtvkmGTtwxPGv4JejKhw=
 github.com/aws/smithy-go v1.27.5 h1:d1ro7KpYOYwP6m73YFa+Kc/A130VsAdX68SpsJwARMM=

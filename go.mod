@@ -13,7 +13,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ecs v1.89.3
 	github.com/aws/aws-sdk-go-v2/service/route53 v1.65.5
 	github.com/aws/aws-sdk-go-v2/service/sns v1.42.3
-	github.com/aws/constructs-go/constructs/v10 v10.8.0
+	github.com/aws/constructs-go/constructs/v10 v10.8.1
 	github.com/aws/jsii-runtime-go v1.139.0
 	github.com/shirou/gopsutil v3.21.11+incompatible
 )

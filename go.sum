@@ -4,8 +4,8 @@ github.com/alexflint/go-arg v1.6.1 h1:uZogJ6VDBjcuosydKgvYYRhh9sRCusjOvoOLZopBln
 github.com/alexflint/go-arg v1.6.1/go.mod h1:nQ0LFYftLJ6njcaee0sU+G0iS2+2XJQfA8I062D0LGc=
 github.com/alexflint/go-scalar v1.2.0 h1:WR7JPKkeNpnYIOfHRa7ivM21aWAdHD0gEWHCx+WQBRw=
 github.com/alexflint/go-scalar v1.2.0/go.mod h1:LoFvNMqS1CPrMVltza4LvnGKhaSpc3oyLEBUZVhhS2o=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.264.0 h1:PkPCYtlVK4MbgIFgsRwW+PFxgii6PKqsel5lEoOju1U=
-github.com/aws/aws-cdk-go/awscdk/v2 v2.264.0/go.mod h1:ZFSi9sbBukhtJExKN2txRWVdggLMwSMjHTO0DQRPjaw=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.265.0 h1:guC5iaLoe6oDy4SIU3Qvm43MEB2YyXd75bf965YnY8s=
+github.com/aws/aws-cdk-go/awscdk/v2 v2.265.0/go.mod h1:jE9ssfb3xV5XQvUuQQOUlMd69DA+4TDyH1AhBsH4+5o=
 github.com/aws/aws-lambda-go v1.54.0 h1:EGYpdyRGF88xszqlGcBewz811mJeRS+maNlLZXFheII=
 github.com/aws/aws-lambda-go v1.54.0/go.mod h1:dpMpZgvWx5vuQJfBt0zqBha60q7Dd7RfgJv23DymV8A=
 github.com/aws/aws-sdk-go-v2 v1.43.5 h1:yKT5GYnFWhuDo+DqKvE5ZPwVn3RjC4MAeBtZGlh6AVM=
@@ -52,8 +52,8 @@ github.com/aws/jsii-runtime-go v1.139.0 h1:DztokuBoSq07v37guk9a/iVA7anRbXxceE7n1
 github.com/aws/jsii-runtime-go v1.139.0/go.mod h1:vvtBJq3wyyJu4sLicDayzacDtvkmGTtwxPGv4JejKhw=
 github.com/aws/smithy-go v1.27.7 h1:Zgj5z4LfcDYoQIVk+n/yGdTkP/2y6ZT5vYxe0fp7bqE=
 github.com/aws/smithy-go v1.27.7/go.mod h1:YE2RhdIuDbA5E5bTdciG9KrW3+TiEONeUWCqxX9i1Fc=
-github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.282 h1:j/9js4FPxAxjPAsO/ugaPCGOhCclxJ0t4WiMO/U7JSA=
-github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.282/go.mod h1:9B0mhAoX2rP440frcAbsPzIrGW5BI/TLMa8zg2oCd10=
+github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.292 h1:kJPmdAT0Ci49lJSTDZfDjHhGKWOD6GRlkv4bIa3l2kw=
+github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.292/go.mod h1:oX6rMF+RSd6IVv1W9XME4NeOVGrjNC5MasjC8QEe/oo=
 github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.2 h1:xAsctRl309idodSn5nShEHg3MtCIhbR7SRwtg4mk0tY=
 github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.2/go.mod h1:fM0jJhRyx51Tcu8cVKbgWSMIeTGo6OtwZezt1mHZPQY=
 github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v54 v54.11.0 h1:LoiCsBtTBiUQu7Cr5KT3kh968Byjwlag0Nuy+/ddwhk=

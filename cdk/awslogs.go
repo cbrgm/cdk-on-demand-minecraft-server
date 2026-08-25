@@ -85,6 +85,12 @@ func NewQueryLogStack(scope constructs.Construct, id string, props *QueryLogStac
 
 	// Create Lambda function to forward logs
 	logForwarderLambdaID := fmt.Sprintf("%s-LogForwarderLambda", id)
+	// Log group for the forwarder Lambda. Declared explicitly because the
+	// LogRetention property is deprecated in favor of passing a log group.
+	logForwarderLambdaLogGroup := awslogs.NewLogGroup(stack, jsii.String(logForwarderLambdaID+"LogGroup"), &awslogs.LogGroupProps{
+		Retention:     awslogs.RetentionDays_ONE_WEEK,
+		RemovalPolicy: awscdk.RemovalPolicy_DESTROY,
+	})
 	logForwarderLambda := awslambda.NewFunction(stack, jsii.String(logForwarderLambdaID), &awslambda.FunctionProps{
 		FunctionName: jsii.String(logForwarderLambdaID),
 		Code:         awslambda.Code_FromAsset(jsii.String("cmd/lambda/logforwarder"), nil),
@@ -92,7 +98,7 @@ func NewQueryLogStack(scope constructs.Construct, id string, props *QueryLogStac
 		Handler:      jsii.String("bootstrap"),
 		Runtime:      awslambda.Runtime_PROVIDED_AL2023(),
 		Architecture: awslambda.Architecture_ARM_64(),
-		LogRetention: awslogs.RetentionDays_ONE_WEEK,
+		LogGroup:     logForwarderLambdaLogGroup,
 		Environment: &map[string]*string{
 			"TARGET_LOG_GROUP_ARN":  jsii.String(fmt.Sprintf("arn:aws:logs:%s:%s:log-group:%s:*", props.DestinationRegion, props.DestinationAccountId, logGroupName)),
 			"TARGET_LOG_GROUP_NAME": queryLogGroup.LogGroupName(),

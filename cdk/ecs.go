@@ -49,7 +49,7 @@ func NewECSResources(scope constructs.Construct, id string, props *ECSResourcesP
 	cluster := awsecs.NewCluster(scope, jsii.String(clusterID), &awsecs.ClusterProps{
 		Vpc:                            props.Vpc,
 		ClusterName:                    jsii.String(clusterID),
-		ContainerInsights:              jsii.Bool(true),
+		ContainerInsightsV2:            awsecs.ContainerInsights_ENABLED,
 		EnableFargateCapacityProviders: jsii.Bool(true),
 	})
 

@@ -70,7 +70,8 @@ func NewLambdaResources(scope constructs.Construct, id string, props *LambdaReso
 	// Add permissions for CloudWatch Logs to invoke Lambda
 	launcherLambda.AddPermission(jsii.String("InvokeLambda"), &awslambda.Permission{
 		Principal: awsiam.NewServicePrincipal(
-			jsii.String(fmt.Sprintf("logs.%s.amazonaws.com", *awscdk.Stack_Of(this).Region())), nil),
+			jsii.String(fmt.Sprintf("logs.%s.amazonaws.com", *awscdk.Stack_Of(this).Region())), nil,
+		),
 		Action:        jsii.String("lambda:InvokeFunction"),
 		SourceArn:     props.QueryLogGroup.LogGroupArn(),
 		SourceAccount: awscdk.Stack_Of(this).Account(),

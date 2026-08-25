@@ -51,6 +51,13 @@ func NewLambdaResources(scope constructs.Construct, id string, props *LambdaReso
 		},
 	})
 
+	// Log group for the launcher Lambda. Declared explicitly because the
+	// LogRetention property is deprecated in favor of passing a log group.
+	launcherLambdaLogGroup := awslogs.NewLogGroup(this, jsii.String(fmt.Sprintf("%s-LauncherLambdaLogGroup", id)), &awslogs.LogGroupProps{
+		Retention:     awslogs.RetentionDays_ONE_WEEK,
+		RemovalPolicy: awscdk.RemovalPolicy_DESTROY,
+	})
+
 	// Create Lambda function using the PROVIDED_AL2023 runtime and x86_64 architecture
 	launcherLambda := awslambda.NewFunction(this, jsii.String(fmt.Sprintf("%s-LauncherLambda", id)), &awslambda.FunctionProps{
 		FunctionName: jsii.String(fmt.Sprintf("%s-LauncherLambda", id)),
@@ -59,7 +66,7 @@ func NewLambdaResources(scope constructs.Construct, id string, props *LambdaReso
 		Handler:      jsii.String("bootstrap"),
 		Runtime:      awslambda.Runtime_PROVIDED_AL2023(),
 		Architecture: awslambda.Architecture_ARM_64(),
-		LogRetention: awslogs.RetentionDays_ONE_WEEK,
+		LogGroup:     launcherLambdaLogGroup,
 		Environment: &map[string]*string{
 			"REGION":  awscdk.Stack_Of(this).Region(),
 			"CLUSTER": props.Cluster.ClusterName(),
@@ -70,7 +77,8 @@ func NewLambdaResources(scope constructs.Construct, id string, props *LambdaReso
 	// Add permissions for CloudWatch Logs to invoke Lambda
 	launcherLambda.AddPermission(jsii.String("InvokeLambda"), &awslambda.Permission{
 		Principal: awsiam.NewServicePrincipal(
-			jsii.String(fmt.Sprintf("logs.%s.amazonaws.com", *awscdk.Stack_Of(this).Region())), nil),
+			jsii.String(fmt.Sprintf("logs.%s.amazonaws.com", *awscdk.Stack_Of(this).Region())), nil,
+		),
 		Action:        jsii.String("lambda:InvokeFunction"),
 		SourceArn:     props.QueryLogGroup.LogGroupArn(),
 		SourceAccount: awscdk.Stack_Of(this).Account(),

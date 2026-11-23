@@ -4,14 +4,14 @@ go 1.26.5
 
 require (
 	github.com/alexflint/go-arg v1.6.1
-	github.com/aws/aws-cdk-go/awscdk/v2 v2.277.0
+	github.com/aws/aws-cdk-go/awscdk/v2 v2.278.0
 	github.com/aws/aws-lambda-go v1.55.1
 	github.com/aws/aws-sdk-go-v2 v1.48.0
 	github.com/aws/aws-sdk-go-v2/config v1.33.21
 	github.com/aws/aws-sdk-go-v2/service/cloudwatchlogs v1.92.2
-	github.com/aws/aws-sdk-go-v2/service/ec2 v1.349.0
+	github.com/aws/aws-sdk-go-v2/service/ec2 v1.350.0
 	github.com/aws/aws-sdk-go-v2/service/ecs v1.106.0
-	github.com/aws/aws-sdk-go-v2/service/route53 v1.72.0
+	github.com/aws/aws-sdk-go-v2/service/route53 v1.73.0
 	github.com/aws/aws-sdk-go-v2/service/sns v1.48.0
 	github.com/aws/constructs-go/constructs/v10 v10.8.1
 	github.com/aws/jsii-runtime-go v1.143.0
@@ -34,7 +34,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.44.5 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.53.0 // indirect
 	github.com/aws/smithy-go v1.28.9 // indirect
-	github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.292 // indirect
+	github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.297 // indirect
 	github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.3 // indirect
 	github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v55 v55.6.0 // indirect
 	github.com/fatih/color v1.19.0 // indirect
